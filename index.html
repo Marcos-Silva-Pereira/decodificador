@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Decodificador</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <main class="apresentacao">
+        <section class="apresentacao__esquerdo">
+            <img class="imagem__esquerdo" src="/assets/Frame 6.png">
+            <textarea id="texto" class='apresentacao__esquerdo__texto' rows="12" cols="10">Digite seu texto
+            </textarea>
+            <p class="apresentacao__esquerdo__alerta">
+                <img src="./assets/Group.png">
+                Apenas letras minúsculas e sem acento.
+            </p>
+
+            <div class="apresentacao__esquerdo__botoes">
+                <button onclick="btnEncriptar()" class="botao__crip">Criptografar</button>
+                <button onclick="btnDesencriptar()" class="botao__desc">Descriptografar</button>
+            </div>
+        </section>
+            
+        <section class="apresentacao__direito">
+            <div id="apresentacao__direito__conteudo">
+                
+                <textarea id="mensagem" cols="20" rows="20"></textarea>
+
+                <img id="foto_direito" class="imagem__direito" src="/assets/High quality products 1 1.svg">
+                
+                <h2 id="titulo_direito" class="apresentacao__direito__titulo">Nenhuma mensagem encontrada</h2>
+                <p id="texto_direito" class="apresentacao__direito__mensagem">
+                    Digite um texto que você deseja 
+                    criptografar ou descriptografar.
+                </p>
+                
+                <input onclick="copiar()" id="copiar" class="apresentacao__direito__botao" type="button" value="Copiar">
+            </div>
+        </section>
+    </main>
+    
+    <footer class="rodape">
+        Desenvolvido por Marcos da Silva Pereira. 2024
+    </footer>
+
+    <script src="javascript.js"></script>
+
+</body>
+</html>
